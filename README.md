@@ -36,7 +36,7 @@ KTGK/
 
 1. Clone dự án:
    ```bash
-   git clone [url-repository]
+   git clone https://github.com/vuinguyen16003069/KTGK.git
    ```
 2. Di chuyển vào thư mục dự án:
    ```bash
