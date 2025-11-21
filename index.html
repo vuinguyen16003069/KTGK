@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J-Shop - Luxury Jewelry Store | Premium Jewelry Collection</title>
+
+    <!-- Meta tags -->
+    <meta
+      name="description"
+      content="Discover exquisite jewelry at J-Shop. Browse our collection of premium rings, necklaces, and bracelets. High-quality gold and silver jewelry for every occasion."
+    />
+    <meta
+      name="keywords"
+      content="jewelry, gold jewelry, silver jewelry, rings, necklaces, bracelets, luxury jewelry"
+    />
+    <meta name="author" content="J-Shop" />
+    <meta property="og:title" content="J-Shop - Luxury Jewelry Store" />
+    <meta
+      property="og:description"
+      content="Discover exquisite jewelry at J-Shop. Premium jewelry collection for every occasion."
+    />
+    <meta property="og:image" content="./assets/images/1.png" />
+    <meta property="og:url" content="https://jshop.com" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/1.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/1.png" />
+
+    <!-- Preload fonts -->
+    <link
+      rel="preload"
+      href="./assets/fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Inter-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/PlayfairDisplay-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <!-- Page loader -->
+    <div id="loader-overlay">
+      <div class="loader" role="status" aria-label="Loading"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">J-Shop</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons d-flex align-items-center gap-3">
+              <a href="#" class="nav-icon" aria-label="Search"><i class="bi bi-search"></i></a>
+              <a href="#" class="nav-icon" aria-label="User"><i class="bi bi-person"></i></a>
+              <a href="#" class="nav-icon position-relative" aria-label="Shopping Cart">
+                <i class="bi bi-bag"></i>
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb" class="container mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Collection</li>
+        </ol>
+      </nav>
+
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+
+      <!-- Our Story Section -->
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 reveal-left">
+            <img src="./assets/images/1.png" class="img-fluid mb-4" alt="Jewelry Story" />
+            <h1 class="display-4 mb-4 reveal">Jewelry tells a great story</h1>
+            <div class="row">
+              <div class="col-6 reveal">
+                <h3 class="h4">Gold</h3>
+                <p class="text-secondary">Her provision acuteness had two why intention.</p>
+              </div>
+              <div class="col-6 reveal">
+                <h3 class="h4">Silver</h3>
+                <p class="text-secondary">Her provision acuteness had two why intention.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal-right">
+            <h2 class="display-5 mb-4">Our story</h2>
+            <p class="text-secondary mb-4">
+              Modern jewelry is made of gold, silver, or platinum, often with precious or
+              semiprecious stones. It evolved from shells, animal teeth, and other items used as
+              body decoration in prehistoric times.
+            </p>
+            <img src="./assets/images/2.png" class="img-fluid" alt="Our Story Image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Products -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+              <img
+                src="./assets/images/3.png"
+                class="img-fluid rounded-3 mb-3"
+                alt="Gold Black Coral Ring"
+              />
+            </div>
+            <div class="col-md-6 ps-md-5">
+              <h2 class="display-6">Gold Black Coral Ring</h2>
+              <p class="text-secondary">
+                A 14k yellow ring that has beautiful Black Coral inlaid strips, hand-crafted by
+                skilled artisans. Customizable with size options S, M, L.
+              </p>
+              <div class="d-flex gap-2 mb-2">
+                <span>Size</span>
+                <span class="badge bg-light text-dark">S</span>
+                <span class="badge bg-light text-dark">M</span>
+                <span class="badge bg-light text-dark">L</span>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span class="product-price">320.99</span>
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+              <img
+                src="./assets/images/4.png"
+                class="img-fluid rounded-3 mb-3"
+                alt="Gold Woven Chain Bracelet"
+              />
+            </div>
+            <div class="col-md-6 ps-md-5">
+              <h2 class="display-6">Gold Woven Chain Bracelet in Black</h2>
+              <p class="text-secondary">
+                This bracelet features a 18k Woven Chain with black enamel inlay. Customizable with
+                size options S, M, L.
+              </p>
+              <div class="d-flex gap-2 mb-2">
+                <span>Size</span>
+                <span class="badge bg-light text-dark">S</span>
+                <span class="badge bg-light text-dark">M</span>
+                <span class="badge bg-light text-dark">L</span>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span class="product-price">549.29</span>
+                <a href="#" class="btn btn-dark rounded-pill px-4 py-2">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections Section -->
+      <section class="py-5 parallax-section">
+        <div class="container">
+          <div class="text-center mb-5 reveal-scale">
+            <p class="section-subtitle">J-Shop's best Collections</p>
+            <h2 class="display-5">Comfort</h2>
+          </div>
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 reveal-left">
+              <img
+                src="./assets/images/5.png"
+                class="img-fluid rounded-3 mb-3 floating-element"
+                alt="Ring on hand"
+              />
+            </div>
+            <div class="col-md-6 ps-md-5 reveal-right">
+              <h3 class="display-6">Wear it with comfort</h3>
+              <p class="text-secondary">
+                Gold chain and ring are crafted to fit the supreme standards of comfort and style.
+                Each piece is ergonomically designed for all-day wear, ensuring maximum comfort
+                without compromising on beauty.
+              </p>
+              <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">GO TO SHOP</a>
+            </div>
+          </div>
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 order-md-2 reveal-right">
+              <img
+                src="./assets/images/6.png"
+                class="img-fluid rounded-3 mb-3 floating-element"
+                alt="Necklaces"
+              />
+            </div>
+            <div class="col-md-6 pe-md-5 order-md-1 reveal-left">
+              <h3 class="display-6">100% Gold</h3>
+              <p class="text-secondary">
+                Only certified 18k gold is used in our creations, ensuring lasting brilliance and
+                value for generations.
+              </p>
+              <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">GO TO SHOP</a>
+            </div>
+          </div>
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 reveal-left">
+              <img
+                src="./assets/images/7.png"
+                class="img-fluid rounded-3 mb-3 floating-element"
+                alt="Earrings"
+              />
+            </div>
+            <div class="col-md-6 ps-md-5 reveal-right">
+              <h3 class="display-6">Trendy</h3>
+              <p class="text-secondary">
+                Our design team creates pieces that are both modern and timeless, inspired by global
+                fashion runways.
+              </p>
+              <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">GO TO SHOP</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted By Section -->
+      <section class="py-5 trusted-by-section">
+        <div class="container text-center">
+          <p class="section-subtitle">Trusted by leading companies</p>
+          <div class="d-flex flex-wrap justify-content-center align-items-center mt-4 gap-4">
+            <div class="company-logo">Planday</div>
+            <div class="company-logo">umbraco</div>
+            <div class="company-logo">Pearlfisher.</div>
+            <div class="company-logo">Brightpearl</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="py-5 testimonial-section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-5">Testimonials</h2>
+          </div>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-5 text-center text-md-start">
+              <img
+                src="./assets/images/8.png"
+                class="testimonial-img-main rounded-3"
+                alt="Testimonial person"
+              />
+
+              <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+                <img
+                  src="./assets/images/9.png"
+                  class="testimonial-img-thumb"
+                  alt="Testimonial thumbnail 1"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="0"
+                />
+                <img
+                  src="./assets/images/10.png"
+                  class="testimonial-img-thumb"
+                  alt="Testimonial thumbnail 2"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="1"
+                />
+                <img
+                  src="./assets/images/11.png"
+                  class="testimonial-img-thumb"
+                  alt="Testimonial thumbnail 3"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="2"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="testimonial-card">
+                      <h4>HELENA GRIFFINS, NC</h4>
+                      <p class="lead fst-italic my-4">
+                        "The quality of the bracelet I purchased from J-Shop is simply outstanding.
+                        You can feel the craftsmanship. It's become my favorite piece of jewelry."
+                      </p>
+                      <div class="d-flex">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <h4>MARCUS DUBOIS, FR</h4>
+                      <p class="lead fst-italic my-4">
+                        "I bought an engagement ring, and the service was exceptional. They guided
+                        me through the process, and my fiancée absolutely loves it. Highly recommend
+                        J-Shop."
+                      </p>
+                      <div class="d-flex">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <h4>ANNA KARENINA, RU</h4>
+                      <p class="lead fst-italic my-4">
+                        "Absolutely stunning jewelry and fantastic customer service. The packaging
+                        was beautiful and it arrived very quickly. I will definitely be a returning
+                        customer."
+                      </p>
+                      <div class="d-flex">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-1">
+              <div class="testimonial-controls-container">
+                <button
+                  class="testimonial-control-btn"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
+                >
+                  <i class="bi bi-chevron-left"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="testimonial-control-btn"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                >
+                  <i class="bi bi-chevron-right"></i>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="py-5 newsletter-section">
+        <div class="container text-center">
+          <h2 class="display-5">Join J-Shop's Family</h2>
+          <form
+            id="newsletterForm"
+            class="d-flex justify-content-center align-items-center gap-2 my-4"
+            style="max-width: 500px; margin: 0 auto"
+          >
+            <input
+              id="newsletterEmail"
+              type="email"
+              class="form-control form-control-lg rounded-pill"
+              placeholder="Enter your email"
+              aria-label="Enter your email"
+              required
+            />
+            <button class="btn btn-dark rounded-pill px-4" type="submit">JOIN FAMILY</button>
+          </form>
+
+          <!-- Success message (controlled by JS) -->
+          <div
+            id="newsletterSuccess"
+            class="alert alert-success d-none mt-3"
+            role="status"
+            aria-live="polite"
+          >
+            Thank you! You've been subscribed.
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center display-5 mb-5">Our Blogs</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card blog-card border-0 bg-transparent h-100">
+                <div class="blog-image-wrapper">
+                  <img
+                    src="./assets/images/12.png"
+                    class="img-fluid rounded-3 mb-3 blog-image"
+                    alt="Blog 1"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold">For Beauty</h5>
+                  <p class="text-secondary mb-3">
+                    Offering Pathway Prevention That Has Not Been Created. Dushan & Co.
+                  </p>
+                  <a href="#" class="btn btn-link text-dark p-0"
+                    >Read More <i class="bi bi-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card blog-card border-0 bg-transparent h-100">
+                <div class="blog-image-wrapper">
+                  <img
+                    src="./assets/images/13.png"
+                    class="img-fluid rounded-3 mb-3 blog-image"
+                    alt="Blog 2"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold">Product Quality</h5>
+                  <p class="text-secondary mb-3">
+                    Blessing Welcomed Ladyship She Has. Six Curiosity Day Necessary.
+                  </p>
+                  <a href="#" class="btn btn-link text-dark p-0"
+                    >Read More <i class="bi bi-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card blog-card border-0 bg-transparent h-100">
+                <div class="blog-image-wrapper">
+                  <img
+                    src="./assets/images/14.png"
+                    class="img-fluid rounded-3 mb-3 blog-image"
+                    alt="Blog 3"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <h5 class="fw-bold">For Comfort</h5>
+                  <p class="text-secondary mb-3">
+                    Warmly Little Before Cousin Suspected Smile. Blessing Six Ladyship Sensible
+                    Judgement.
+                  </p>
+                  <a href="#" class="btn btn-link text-dark p-0"
+                    >Read More <i class="bi bi-arrow-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Reviews Section -->
+    <section class="py-5 reviews-section">
+      <div class="container">
+        <h2 class="text-center display-5 mb-5">Customer Reviews</h2>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-touch="false">
+          <div class="carousel-inner" id="reviews-container">
+            <!-- Items will be added here -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="footer-brand">J-Shop</h5>
+            <p class="text-secondary">
+              Timeless elegance, crafted for you. Discover jewelry that tells your story.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Product</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Email Flow</a></li>
+              <li><a href="#">Free Tools</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Resources</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Member Stories</a></li>
+              <li><a href="#">Story</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <h5 class="mt-4">Get in touch</h5>
+            <p class="text-secondary">contact@jshop.com</p>
+            <div class="d-flex">
+              <a href="#" class="social-icon me-3" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="social-icon me-3" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon me-3" aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="Pinterest"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center text-secondary mb-0">
+          Copyright 2025 jshop.com, all rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
